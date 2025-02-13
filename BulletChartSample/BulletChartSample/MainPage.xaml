@@ -21,11 +21,14 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="{OnPlatform Android=68,Default=80,iOS=68}"/>
                 </Grid.RowDefinitions>
+                
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="{OnPlatform Android=20, Default=40, iOS=15}"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
+                
                 <BoxView Grid.Column="0" Grid.RowSpan="2" BackgroundColor="Blue" Margin="0,-20,0,0" HeightRequest="45" WidthRequest="20" />
+                
                 <StackLayout Grid.Column="1" Grid.Row="0" Margin="7,7,0,0">
                     <Label Text="Comparative Analysis of Product Performance" FontSize="{OnPlatform Android=15,Default=18,iOS=15}" FontAttributes="Bold"/>
                     <Label Text="{OnPlatform Default='Evaluation of Key Performance Metrics and Competitive Benchmarking Across Market Competitors.', Android='Evaluating Key Performance Metrics and Competitive Industry Benchmarks.', iOS='Evaluating Performance Metrics and Industry Benchmarks.'}" FontSize="{OnPlatform Android=10,Default=13,iOS=10}" Margin="0,2,0,0"/>
